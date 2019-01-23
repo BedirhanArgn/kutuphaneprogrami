@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" fx:id="textfield4" prefHeight="471.0" prefWidth="862.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ilkders.FXMLDocumentController">
+   <children>
+      <Label fx:id="id" layoutX="16.0" layoutY="42.0" prefHeight="18.0" prefWidth="118.0" text="ID:" textAlignment="RIGHT" />
+      <TextField fx:id="textfield" layoutX="147.0" layoutY="74.0" />
+      <Label fx:id="yazari" layoutX="14.0" layoutY="110.0" prefHeight="18.0" prefWidth="118.0" text="Kitabın Yazari:" />
+      <TextField fx:id="textfiedl2" layoutX="147.0" layoutY="106.0" />
+      <Label fx:id="yayinadi" layoutX="14.0" layoutY="140.0" prefHeight="18.0" prefWidth="106.0" text="Yayınevi Adi:" />
+      <TextField fx:id="textfield3" layoutX="147.0" layoutY="136.0" />
+      <Label fx:id="basimtarihi" layoutX="447.0" layoutY="42.0" prefHeight="18.0" prefWidth="118.0" text="Basım Tarihi:" />
+      <Label fx:id="türü" layoutX="447.0" layoutY="78.0" prefHeight="18.0" prefWidth="118.0" text="Kitabın Türü" />
+      <TextField fx:id="textfield5" layoutX="576.0" layoutY="75.0" />
+      <DatePicker fx:id="date" layoutX="576.0" layoutY="39.0" />
+      <Label fx:id="raf" layoutX="447.0" layoutY="122.0" prefHeight="18.0" prefWidth="75.0" text="Kitap Raf" />
+      <TextField fx:id="textfield6" layoutX="576.0" layoutY="119.0" />
+      <Button fx:id="buttonkaydet" layoutX="58.0" layoutY="177.0" mnemonicParsing="false" onAction="#kaydet" prefHeight="34.0" prefWidth="75.0" text="KAYDET" />
+      <Button fx:id="buttonsil" layoutX="258.0" layoutY="183.0" mnemonicParsing="false" onAction="#sil" prefHeight="34.0" prefWidth="75.0" text="Sil" />
+      <Button fx:id="buttonupdate" layoutX="461.0" layoutY="177.0" mnemonicParsing="false" onAction="#update" prefHeight="34.0" prefWidth="75.0" text="Ödünç" />
+      <TableView fx:id="booktable" layoutX="16.0" layoutY="236.0" prefHeight="206.0" prefWidth="830.0">
+        <columns>
+            <TableColumn fx:id="kitapid" prefWidth="90.39995956420898" text="id" />
+            <TableColumn fx:id="kitapadi" prefWidth="125.60000610351562" text="Kitap Adı" />
+            <TableColumn fx:id="yazaradi" prefWidth="127.19996643066406" text="Yazarın Adı" />
+            <TableColumn fx:id="yayinevi" prefWidth="119.20001220703125" text="Yayın Evi" />
+            <TableColumn fx:id="bastar" prefWidth="124.79998779296875" text="Basım Tarihi" />
+            <TableColumn fx:id="turu" prefWidth="125.5999755859375" text="Turu" />
+            <TableColumn fx:id="kitaprafi" minWidth="0.0" prefWidth="111.199951171875" text="Rafi" />
+        </columns>
+      </TableView>
+      <Button fx:id="listbutton" layoutX="659.0" layoutY="174.0" mnemonicParsing="false" onAction="#listele" prefHeight="34.0" prefWidth="66.0" text="Listele" />
+      <Label fx:id="adi1" layoutX="16.0" layoutY="77.0" prefHeight="18.0" prefWidth="118.0" text="Kitabın Adı:" textAlignment="RIGHT" />
+      <TextField fx:id="textfieldid" layoutX="147.0" layoutY="38.0" />
+   </children>
+</AnchorPane>
